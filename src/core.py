@@ -295,7 +295,7 @@ def export_to_excel(td_manager: ToDoManager):
         cell.alignment = Alignment(horizontal="center", vertical="center")
     for tl in td_manager.list_of_tasklists:
         if not tl.list_of_tasks:  # empty tl
-            a_ws.append([tl.name, '', '', '', '', ''])
+            a_ws.append([tl.name, '', '', '', ''])
             for cell in a_ws[a_ws.max_row]:
                 cell.alignment = Alignment(horizontal="center", vertical="center")
         else:
